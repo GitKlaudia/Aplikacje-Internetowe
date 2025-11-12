@@ -1,33 +1,34 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
+    <meta charset="UTF-8">
+    <title>Puzzle</title>
+    <link rel="stylesheet" href="leaflet-1.7.1/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="leaflet-1.7.1/leaflet-src.js"></script>
+    <script src="leaflet-1.7.1/leaflet-providers.js"></script>
+    <script src="leaflet-1.7.1/leaflet-image.js"></script>
+    <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+    
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
 </head>
-
 <body>
+    <div class="main-container">
+        <div class="map-row">
+            <div id="map"></div>
+            <button id="getLocation">Moja lokalizacja</button>
+            <canvas id="rasterMap"></canvas>
+            <button id="saveButton">Pobierz mapę</button>
+        </div>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js"></script>
-
+    <div class="map-row">
+        <div id="map2" style="position: relative; width: 600px; height: 300px; border: 1px solid black;"></div>
+        <button id="startPuzzle">Drag&Drop Puzzle</button>
+        <div id="tableContainer" style="width: 620px; margin-top: 10px;"></div>
+        
+    </div>
+    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
