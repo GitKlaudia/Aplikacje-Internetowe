@@ -1,0 +1,14 @@
+# Node modules
+node_modules/
+
+# Electron build output
+platforms/electron/build/
+platforms/electron/www/resources/*.asar
+
+# systemowe pliki
+*.exe
+*.dll
+*.log
+*.zip
+.DS_Store
+Thumbs.db
